@@ -15,7 +15,7 @@ A simple and minimal daily journaling app to track your thoughts and moods.
 
 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone [<your-repo-url>](https://github.com/Mayank8D/Xproj)
 cd daily-journal
 ```
 
