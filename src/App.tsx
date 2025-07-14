@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 type Entry = {
   id: number;
@@ -213,17 +213,6 @@ function App() {
             <button onClick={() => setTheme('light')} className={themeClasses[theme].button}>☀️</button>
             <button onClick={() => setTheme('dark')} className={themeClasses[theme].button}>🌙</button>
           </div>
-        </div>
-        <div className="flex flex-wrap gap-2 mb-4 justify-center">
-          {['😊', '😢', '😡', '😴', '🤔'].map(emoji => (
-            <button
-              key={emoji}
-              onClick={() => filterByMood(emoji)}
-              className={`text-2xl px-3 py-2 rounded-xl border ${themeClasses[theme].button}`}
-            >
-              {emoji}
-            </button>
-          ))}
         </div>
         <div className={themeClasses[theme].card + ' w-full'}>
           <div className="mb-4">
